@@ -1,13 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #0f111a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.emoji {
+  background-image: '👋';
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.emoji-wave {
+  animation-name: wave-emoji;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-emoji {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#blob1 {
+  position: absolute;
+  top: 230px;
+  left: 100px;
+}
+
+#blob3 {
+  z-index: -1;
+  position: absolute;
+  top: 260px;
+  left: 50px;
+}
+
+#blob2 {
+  position: absolute;
+  top: 40px;
+  left: 220px;
+}
+
+#blob4 {
+  position: absolute;
+  right: 0;
+}
+
+#blob5 {
+  position: absolute;
+  left: -15%;
+  top: 45%;
+}
+
+#blob6 {
+  position: absolute;
+  right: 3%;
+  bottom: 30%;
+}
+
+#dots {
+  z-index: -1;
+  position: absolute;
+  right: 150px;
+  top: 150px;
+}
+
+.divider {
+  position: absolute;
+  z-index: 1;
+  height: 400px;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .divider {
+    display: none;
+  }
+
+  #blob1 {
+    top: -10px;
+    z-index: -1;
+    width: 80px;
+    height: 80px;
+  }
+
+  #blob2 {
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+  }
+
+  #dots {
+    z-index: -1;
+    position: absolute;
+    left: 250px;
+    top: 200px;
+  }
+  svg#terminal-react {
+    overflow: hidden;
+    width: 250px;
+    height: 200px;
+  }
+
+  .header {
+    z-index: 0;
+  }
+}
+
+.divider2 {
+  position: absolute;
+  z-index: 0;
+  height: 400px;
+  width: 100%;
+  bottom: 0;
+}
+
+.divider3 {
+  position: absolute;
+  z-index: 1;
+  height: 400px;
+  width: 100%;
+  bottom: 255px;
+}
+
+.divider4 {
+  position: absolute;
+  z-index: 0;
+  height: 400px;
+  width: 100%;
+  bottom: 265px;
+}
+.shadow-text {
+  text-shadow: 0px 0px 2px black;
+}
+
+.orange-color {
+  color: #82aaff;
+}
+
+.animated {
+  animation: floating linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-5px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  65% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated2 {
+  animation: explode linear;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes explode {
+  0% {
+    transform: skew(0);
+  }
+  /* 15% {
+    transform: translateY(-5px);
+  } */
+  25% {
+    transform: skew(-0.06turn, 18deg);
+  }
+  50% {
+    transform: skew(0);
+  }
+  /* 65% {
+    transform: translateY(0);
+  } */
+  85% {
+    transform: skew(0.06turn, -18deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+
+#terminal-react {
+  width: 800px;
+  height: 480px;
+  top: 25%;
+  position: absolute;
+  z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 20%;
+  right: 20%;
+}
+
+svg#terminal-react {
+  box-shadow: 0px 0px 4px #89ddff;
+}
+
+#terminal-react2 {
+  width: 600px;
+  height: 400px;
+  top: 250px;
+  position: absolute;
+  z-index: -1;
+  left: 250px;
+}
+
+svg#terminal-react2 {
+  box-shadow: 0px 0px 4px #89ddff;
+}
+
+.pulse {
+  border-radius: 1%;
+  box-shadow: 0 0 0 #82aaff;
+  animation: pulse 2s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(130, 170, 255, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(130, 170, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(130, 170, 255, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(130, 170, 255, 0.4);
+    box-shadow: 0 0 0 0 rgba(130, 170, 255, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(130, 170, 255, 0);
+    box-shadow: 0 0 0 10px rgba(130, 170, 255, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(130, 170, 255, 0);
+    box-shadow: 0 0 0 0 rgba(130, 170, 255, 0);
+  }
+}
+
+@keyframes purple-pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(247, 140, 108, 0.4);
+    box-shadow: 0 0 0 0 rgba(247, 140, 108, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(247, 140, 108, 0);
+    box-shadow: 0 0 0 10px rgba(247, 140, 108, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(247, 140, 108, 0);
+    box-shadow: 0 0 0 0 rgba(247, 140, 108, 0);
+  }
+}
+
+.logo-pulse {
+  animation: logopulse 4s linear infinite;
+}
+
+@keyframes logopulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Logos */
+#nodejs {
+  position: absolute;
+  left: 5%;
+}
+
+#reactjs {
+  position: absolute;
+  right: 10%;
+  top: 8%;
+}
+
+#redux {
+  position: absolute;
+  left: 13%;
+  top: 37%;
+}
+
+#tailwind {
+  position: absolute;
+  right: 15%;
+  top: 45%;
+}
+
+#python {
+  position: absolute;
+  right: 32%;
+  top: 3%;
+}
+
+#graphql {
+  z-index: -1;
+  position: absolute;
+  left: 33%;
+  top: 15%;
+}
+
+.button-download {
+  animation: pulse 2s linear infinite;
+  background-color: #82aaff;
+  cursor: pointer;
+  padding: 0.5rem;
+  text-shadow: 0px 0px 1px black;
+}
+
+.button-download:hover {
+  background-color: #6280c2;
+}
+
+.test {
+  margin-top: 36rem;
 }

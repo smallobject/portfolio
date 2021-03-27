@@ -1,0 +1,48 @@
+import Header from './components/Header';
+import { ReactComponent as Blob1 } from './assets/blob1.svg';
+import { ReactComponent as Blob2 } from './assets/blob2.svg';
+import { ReactComponent as Blob3 } from './assets/blob3.svg';
+import { ReactComponent as Blob4 } from './assets/blob4.svg';
+import { ReactComponent as Blob5 } from './assets/blob5.svg';
+import { ReactComponent as Blob6 } from './assets/blob6.svg';
+import { ReactComponent as NodeJS } from './assets/logos/nodejs.svg';
+import { ReactComponent as ReactJS } from './assets/logos/reactjs.svg';
+import { ReactComponent as Redux } from './assets/logos/redux.svg';
+import { ReactComponent as Tailwind } from './assets/logos/tailwind.svg';
+import { ReactComponent as Python } from './assets/logos/python.svg';
+import { ReactComponent as GraphQL } from './assets/logos/graphql.svg';
+import { ReactComponent as Dots } from './assets/dots.svg';
+import Terminal from './components/Terminal';
+import NavBar from './components/NavBar';
+
+import PoETrade from './components/projects/Project1';
+import './App.css';
+
+function App() {
+  return (
+    <div className='App'>
+      <NavBar />
+      <Header className='header' />
+      <Terminal id='terminal-react' className='pulse' />
+      <Blob1 id='blob1' className='animated' />
+      <Blob2 id='blob2' />
+      <Blob4 id='blob4' />
+      <Blob3 id='blob3' className='animated' />
+      <Blob5 id='blob5' />
+      <Blob6 id='blob6' />
+      <NodeJS id='nodejs' className='logo-pulse' />
+      <ReactJS id='reactjs' className='logo-pulse' />
+      <Redux id='redux' className='logo-pulse' />
+      <Tailwind id='tailwind' />
+      <Python id='python' className='logo-pulse' />
+      <GraphQL id='graphql' className='logo-pulse' />
+      <Dots id='dots' className='animated2' />
+      <div className='test grid grid-cols-3'>
+        <div></div>
+        <PoETrade />
+      </div>
+    </div>
+  );
+}
+
+export default App;
