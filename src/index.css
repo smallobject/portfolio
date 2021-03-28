@@ -4,9 +4,19 @@
 
 @font-face {
   font-family: 'JetBrainsMono Nerd Font';
+  font-style: normal;
+  font-weight: normal;
   src: local('JetBrainsMono Nerd Font'),
     url('./assets/fonts/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete.ttf')
-      format('ttf');
+      format('truetype');
+}
+@font-face {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-style: bold;
+  font-weight: bold;
+  src: local('JetBrainsMono Nerd Font'),
+    url('./assets/fonts/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete.ttf')
+      format('truetype');
 }
 
 html {
