@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'JetBrainsMono Nerd Font';
+  src: local('JetBrainsMono Nerd Font'),
+    url('./assets/fonts/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete.ttf')
+      format('ttf');
+}
+
 html {
   scroll-behavior: smooth;
 }
