@@ -510,3 +510,7 @@ svg#terminal-react2 {
     transform: rotate(-6deg);
   }
 }
+
+.button-width {
+  width: 90px;
+}

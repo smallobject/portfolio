@@ -34,14 +34,15 @@ function Project1() {
             <span className='orange-color font-bold'> React</span> made building
             an <span className='orange-color font-bold'>MVP</span> quite quick
             and comfortable, while also allowing the possibility to scale later
-            on. Players can load existing items in their inventory by searching
-            their accounts name, allowing for direct comparison between
-            purchases. The project has many features which are listed in the
-            github page.
+            on. The project has many features which are listed in the github
+            page.
           </p>
-          <button className='ml-48 bg-gray-800 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'>
+          <a
+            href='https://github.com/smallobject/poe-trading-site'
+            className='m-auto flex button-width bg-gray-800 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'
+          >
             Github Link
-          </button>
+          </a>
         </div>
         <div className='w-56 md:w-64 m-bg-contrast -mt-10 shadow-lg rounded-lg overflow-hidden'>
           <div className='py-2 text-center font-bold uppercase tracking-wide text-white'>
