@@ -24,13 +24,15 @@ const Header = () => {
     //     </button>
     //   </div>
     // </div>
-    <div className='flex'>
-      <div className='rounded-md p-1 flex-auto'>
-        <h1 className='text-6xl text-center text-white shadow-text'>
-          Hello!<span className='emoji-wave'>👋</span>
-        </h1>
-        <div className='w-1/3 flex flex-1'>
-          <span className='text-white w-80 shadow-text'>
+    <div className='flex order-3 flex-wrap justify-items-center justify-around mt-4'>
+      <div className='flex-1'>
+        <div className='rounded-md p-1'>
+          <h1 className='text-6xl text-center text-white shadow-text'>
+            Hello!<span className='emoji-wave'>👋</span>
+          </h1>
+        </div>
+        <div className='w-64 items-center m-auto'>
+          <span className='text-white shadow-text'>
             I'm rupture aka "small object". I am a
             <span className='orange-color shadow-text'> Project Manager </span>
             turned into a

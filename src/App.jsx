@@ -20,9 +20,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className='App'>
-      <NavBar />
-      <Header className='header' />
+    <div>
+      <div className='grid grid-cols-3'>
+        <NavBar />
+        <Header className='header' />
+      </div>
       <Terminal id='terminal-react' className='pulse' />
       <Blob1 id='blob1' className='animated' />
       <Blob2 id='blob2' />
@@ -37,8 +39,8 @@ function App() {
       <Python id='python' className='logo-pulse' />
       <GraphQL id='graphql' className='logo-pulse' />
       <Dots id='dots' className='animated2' />
-      <div className='test grid grid-cols-3'>
-        <div></div>
+      <div className='grid grid-cols-3 grid-rows-3'>
+        <PoETrade />
         <PoETrade />
       </div>
     </div>
