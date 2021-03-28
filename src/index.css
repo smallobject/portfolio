@@ -540,5 +540,5 @@ svg#terminal-react2 {
 }
 
 .button-width {
-  width: 90px;
+  width: max-content;
 }

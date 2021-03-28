@@ -998,12 +998,12 @@ function SvgComponent(props) {
             {'API Development, User Auth, etc..'}
           </text>
           <text
-            textLength={140}
+            textLength={340}
             fontWeight='bold'
             className='prefix__foreground'
             id='prefix__g27'
           >
-            {'to name a few.. :)'}
+            {'to name a few.. PS: This is not an image :)'}
           </text>
         </defs>
         <g

@@ -20,9 +20,9 @@ function Project1() {
           <div className='w-full h-full rotating-bg3 absolute transform -rotate-6 rounded-md rotate-left' />
           <div className='w-full h-full rotating-bg3 absolute transform rotate-6 rounded-md rotate-right' />
           <p className='m-4'>
-            <span className='text-3xl m-blue text-center mb-2'>
+            <p className='text-3xl m-blue text-center mb-2'>
               PoE Trading Platform
-            </span>
+            </p>
             The platform allows players to trade items with each other using the
             publicly listed items on the API. Building a trading platform while
             relying on another API can be quite a challenge. I used
