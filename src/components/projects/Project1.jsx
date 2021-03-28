@@ -5,7 +5,7 @@ function Project1() {
 
   return (
     <div className='items-center location-2'>
-      <h1 className='text-6xl text-white text-center'>Projects</h1>
+      <h3 className='text-6xl text-white text-center p-8'>Projects</h3>
       <div
         className='flex flex-col justify-center items-center max-w-lg mx-auto my-8 relative h-96'
         onMouseEnter={() => setSectionVisibility('div-shown')}

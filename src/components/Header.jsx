@@ -24,7 +24,7 @@ const Header = () => {
     //     </button>
     //   </div>
     // </div>
-    <div className='flex order-3 flex-wrap justify-items-center justify-around mt-16 mb-8'>
+    <div className='flex order-3 flex-wrap justify-items-center justify-around mt-16 mb-8 location-2'>
       <div className='flex-1'>
         <div className='rounded-md p-1'>
           <h1 className='text-6xl text-center text-white shadow-text'>

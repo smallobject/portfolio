@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import Header from './components/Header';
 import { ReactComponent as Blob1 } from './assets/blob1.svg';
 import { ReactComponent as Blob2 } from './assets/blob2.svg';
@@ -20,14 +21,33 @@ import ClothingStore from './components/projects/Project2';
 import './App.css';
 
 function App() {
+  const projectRef = useRef(null);
+
+  const scrollToProjects = () => projectRef.current.scrollIntoView();
+
   return (
     <div>
       <div className='grid grid-cols-3'>
-        <NavBar />
+        {/* Where navbar starts */}
+        <div className='flex text-gray-300 text-ms fixed z-10'>
+          <span className='m-2 hover:text-white cursor-pointer float-right'>
+            About
+          </span>
+          <span
+            className='m-2 hover:text-white cursor-pointer'
+            onClick={() => scrollToProjects()}
+          >
+            Projects
+          </span>
+          <span className='m-2 hover:text-white cursor-pointer'>Resume</span>
+          <span className='m-2 hover:text-white cursor-pointer'>Contact</span>
+        </div>
+        {/* Where navbar ends
+        Where header starts */}
         <Header className='header' />
       </div>
       <div className='terminal-grid'>
-        <Terminal className='pulse m-auto terminal-grid-location' />
+        <Terminal className='pulse m-auto terminal-grid-location terminal-size' />
       </div>
       <Blob1 id='blob1' className='animated' />
       <Blob2 id='blob2' />
@@ -42,7 +62,7 @@ function App() {
       <Python id='python' className='logo-pulse' />
       <GraphQL id='graphql' className='logo-pulse' />
       <Dots id='dots' className='animated2' />
-      <div className='grid grid-cols-3 grid-rows-3 mt-4'>
+      <div ref={projectRef} className='grid grid-cols-3 grid-rows-3 mt-4'>
         <PoETrade />
         <ClothingStore />
       </div>
