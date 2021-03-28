@@ -25,7 +25,7 @@ function App() {
         <NavBar />
         <Header className='header' />
       </div>
-      <div className='terminal-grid '>
+      <div className='terminal-grid'>
         <Terminal className='pulse m-auto terminal-grid-location' />
       </div>
       <Blob1 id='blob1' className='animated' />
@@ -41,8 +41,7 @@ function App() {
       <Python id='python' className='logo-pulse' />
       <GraphQL id='graphql' className='logo-pulse' />
       <Dots id='dots' className='animated2' />
-      <div className='grid grid-cols-3 grid-rows-3'>
-        <PoETrade />
+      <div className='grid grid-cols-3 grid-rows-3 mt-4'>
         <PoETrade />
       </div>
     </div>
