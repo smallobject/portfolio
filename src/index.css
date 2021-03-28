@@ -444,3 +444,49 @@ svg#terminal-react2 {
     url('https://raw.githubusercontent.com/smallobject/poe-trading-site/main/images/demo.gif');
   visibility: visible;
 }
+
+.rotating-bg {
+  background-color: #090b10;
+  z-index: -1;
+}
+
+.rotating-bg2 {
+  background-color: #090b10;
+  z-index: -1;
+}
+
+.rotating-bg3 {
+  background-color: #82aaff;
+  z-index: -1;
+}
+
+.rotate-left {
+  animation: rotate-left 5s linear infinite;
+}
+
+@keyframes rotate-left {
+  0% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
+.rotate-right {
+  animation: rotate-right 5s linear infinite;
+}
+
+@keyframes rotate-right {
+  0% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(-6deg);
+  }
+}

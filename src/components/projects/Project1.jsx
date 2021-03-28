@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Project1() {
-  const [sectionVisibility, setSectionVisibility] = useState('div-shown');
+  const [sectionVisibility, setSectionVisibility] = useState('div-hidden');
 
   return (
     <div className='items-center location-2'>
@@ -11,10 +11,14 @@ function Project1() {
         onMouseEnter={() => setSectionVisibility('div-shown')}
         onMouseLeave={() => setSectionVisibility('div-hidden')}
       >
+        <div className='w-full h-full rotating-bg absolute rounded-md rotate-left' />
+        <div className='w-full h-full rotating-bg2 absolute rounded-md rotate-right' />
         <div className='m-bg-contrast h-64 w-full rounded-lg shadow-lg bg-cover bg-center bg-gradient' />
         <div
           className={`absolute bg-cover shadow-lg w-full h-full rounded-md text-white description ${sectionVisibility} `}
         >
+          <div className='w-full h-full rotating-bg3 absolute transform -rotate-6 rounded-md rotate-left' />
+          <div className='w-full h-full rotating-bg3 absolute transform rotate-6 rounded-md rotate-right' />
           <p className='m-4'>
             Building a trading platform while relying on another API can be
             quite a challenge. I used nodeJS and Express to build an API that
