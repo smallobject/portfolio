@@ -14,7 +14,7 @@ import { ReactComponent as Python } from './assets/logos/python.svg';
 import { ReactComponent as GraphQL } from './assets/logos/graphql.svg';
 import { ReactComponent as Dots } from './assets/dots.svg';
 import Terminal from './components/Terminal';
-import NavBar from './components/NavBar';
+// import NavBar from './components/NavBar';
 
 import PoETrade from './components/projects/Project1';
 import ClothingStore from './components/projects/Project2';
