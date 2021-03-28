@@ -16,6 +16,7 @@ import Terminal from './components/Terminal';
 import NavBar from './components/NavBar';
 
 import PoETrade from './components/projects/Project1';
+import ClothingStore from './components/projects/Project2';
 import './App.css';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <Dots id='dots' className='animated2' />
       <div className='grid grid-cols-3 grid-rows-3 mt-4'>
         <PoETrade />
+        <ClothingStore />
       </div>
     </div>
   );
