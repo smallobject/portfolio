@@ -379,3 +379,16 @@ svg#terminal-react2 {
 .test {
   margin-top: 36rem;
 }
+
+.terminal-grid {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: '. . .';
+}
+
+.terminal-grid-location {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}

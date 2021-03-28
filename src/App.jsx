@@ -25,7 +25,9 @@ function App() {
         <NavBar />
         <Header className='header' />
       </div>
-      <Terminal id='terminal-react' className='pulse' />
+      <div className='terminal-grid '>
+        <Terminal className='pulse m-auto terminal-grid-location' />
+      </div>
       <Blob1 id='blob1' className='animated' />
       <Blob2 id='blob2' />
       <Blob4 id='blob4' />
