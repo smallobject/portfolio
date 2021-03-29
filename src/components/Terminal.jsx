@@ -53,11 +53,22 @@ function SvgComponent(props) {
       <circle cx={44} cy={23} r={7} fill='#f4bf75' />
       <circle cx={64} cy={23} r={7} className='prefix__color2' />
       {isPlaying === 'paused' ? (
-        <text x={80} y={12} fill='#f92672' className='font-bold blinking'>
+        <text
+          x={80}
+          y={15}
+          fill='#f92672'
+          className='blinking jetbrains'
+          fontSize='14'
+        >
           {'Animation Paused'}
         </text>
       ) : (
-        <text x={80} y={12} className='font-bold houdini prefix__color2'>
+        <text
+          x={80}
+          y={15}
+          fontSize='14'
+          className='houdini prefix__color2 jetbrains'
+        >
           {'Animation Playing'}
         </text>
       )}
