@@ -19,7 +19,7 @@ function Project1() {
         >
           <div className='w-full h-full rotating-bg3 absolute transform -rotate-6 rounded-md rotate-left' />
           <div className='w-full h-full rotating-bg3 absolute transform rotate-6 rounded-md rotate-right' />
-          <p className='m-4'>
+          <div className='m-4'>
             <p className='text-3xl m-blue text-center mb-2'>
               PoE Trading Platform
             </p>
@@ -36,7 +36,7 @@ function Project1() {
             and comfortable, while also allowing the possibility to scale later
             on. The project has many features which are listed in the github
             page.
-          </p>
+          </div>
           <a
             href='https://github.com/smallobject/poe-trading-site'
             className='m-auto flex button-width bg-gray-800 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'

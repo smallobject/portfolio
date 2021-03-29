@@ -18,7 +18,7 @@ function Project4() {
         >
           <div className='w-full h-full rotating-bg3 absolute transform -rotate-6 rounded-md rotate-left' />
           <div className='w-full h-full rotating-bg3 absolute transform rotate-6 rounded-md rotate-right' />
-          <p className='m-4'>
+          <div className='m-4'>
             <p className='text-3xl m-blue text-center mb-2'>Portfolio Site</p>
             This website itself was built as a mini-project, it uses some really
             cool technology like{' '}
@@ -33,7 +33,7 @@ function Project4() {
             things. I created the initial design in{' '}
             <span className='orange-color font-bold'>Figma</span> and then moved
             on to creating the actual website.
-          </p>
+          </div>
           <a
             href='https://github.com/smallobject/clothing-store'
             className='m-auto flex button-width bg-gray-800 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'

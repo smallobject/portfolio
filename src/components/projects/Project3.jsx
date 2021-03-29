@@ -4,7 +4,7 @@ function Project3() {
   const [sectionVisibility, setSectionVisibility] = useState('div-hidden');
 
   return (
-    <div className='items-center location-2 -mt-12'>
+    <div className='items-center location-2 -mt-20'>
       <div
         className='flex flex-col justify-center items-center max-w-lg mx-auto my-8 relative h-96'
         onMouseEnter={() => setSectionVisibility('div-shown3')}
@@ -18,7 +18,7 @@ function Project3() {
         >
           <div className='w-full h-full rotating-bg3 absolute transform -rotate-6 rounded-md rotate-left' />
           <div className='w-full h-full rotating-bg3 absolute transform rotate-6 rounded-md rotate-right' />
-          <p className='m-4'>
+          <div className='m-4'>
             <p className='text-3xl m-blue text-center mb-2'>
               React Ecommerce Site
             </p>
@@ -29,7 +29,7 @@ function Project3() {
             working GraphQL as backend and one as direct Firebase using
             NodeJS+Express as a middleman. Full disclosure this project was part
             of a course I was following.
-          </p>
+          </div>
           <a
             href='https://github.com/smallobject/clothing-store'
             className='m-auto flex button-width bg-gray-800 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'

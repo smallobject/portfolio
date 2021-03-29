@@ -584,3 +584,7 @@ svg#terminal-react2 {
 .jetbrains {
   font-family: 'JetBrainsMono Nerd Font';
 }
+
+.profile-stroke {
+  box-shadow: 0px 0px 0px 16px #090b10;
+}

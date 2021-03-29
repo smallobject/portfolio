@@ -41,7 +41,7 @@ const Header = () => {
               Full Stack Developer
             </span>
             . I have experience in publicly released SaaS products in the
-            fintech, crypto and marketing vertical.
+            fintech, crypto and marketing industry.
           </span>
         </div>
         <div className='items-center text-center mt-6'>

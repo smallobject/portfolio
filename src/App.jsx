@@ -16,6 +16,9 @@ import { ReactComponent as Dots } from './assets/dots.svg';
 import Terminal from './components/Terminal';
 // import NavBar from './components/NavBar';
 
+import About from './components/About';
+
+// Projects
 import PoETrade from './components/projects/Project1';
 import PoEUtil from './components/projects/Project2';
 import ClothingStore from './components/projects/Project3';
@@ -25,9 +28,11 @@ import './App.css';
 function App() {
   const projectRef = useRef(null);
   const homeRef = useRef(null);
+  const aboutRef = useRef(null);
 
   const scrollToProjects = () => projectRef.current.scrollIntoView();
   const scrollToHome = () => homeRef.current.scrollIntoView();
+  const scrollToAbout = () => aboutRef.current.scrollIntoView();
 
   return (
     <div>
@@ -46,7 +51,10 @@ function App() {
           >
             Projects
           </span>
-          <span className='m-2 hover:text-white cursor-pointer float-right'>
+          <span
+            className='m-2 hover:text-white cursor-pointer float-right'
+            onClick={() => scrollToAbout()}
+          >
             About
           </span>
           <span className='m-2 hover:text-white cursor-pointer'>Resume</span>
@@ -77,6 +85,9 @@ function App() {
         <Portfolio />
         <PoEUtil />
         <ClothingStore />
+      </div>
+      <div ref={aboutRef} className='terminal-grid mt-32'>
+        <About />
       </div>
     </div>
   );
