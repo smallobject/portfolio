@@ -74,6 +74,23 @@ body {
   }
 }
 
+.cursor-blink {
+  -webkit-animation: cursor-blink 0.7s infinite;
+  animation: cursor-blink 0.7s infinite;
+}
+
+@keyframes cursor-blink {
+  0% {
+    color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    color: rgba(255, 255, 255, 0);
+  }
+}
+
 #blob1 {
   position: absolute;
   top: 230px;
@@ -666,20 +683,4 @@ svg#terminal-react2 {
     transparent 40%,
     transparent
   );
-}
-
-.cursor-blink {
-  animation: cursor-blink 0.7s infinite;
-}
-
-@keyframes cursor-blink {
-  0% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-  }
 }

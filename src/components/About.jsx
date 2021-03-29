@@ -76,7 +76,7 @@ function About() {
         <h1 className='font-bold text-white jetbrains bg-black w-max pl-1 pr-1 mt-4'>
           {' '}
           $ cat <span className='orange-color'>BACK_end.txt</span>
-          <span className='cursor-blink font-bold jetbrains'>|</span>
+          <span className='cursor-blink font-bold font-mono'>|</span>
         </h1>
         <p>NodeJS, Python, Django, Express, Koa, MongoDB, mongoose,</p>
         <p>GraphQL, Hasura, Apollo, PostgreSQL, Firebase, JWT</p>
