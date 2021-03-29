@@ -26,37 +26,85 @@ function About() {
         alt='head1'
         className='h-32 w-32 object-cover rounded-full z-10 m-auto -mb-10 profile-stroke relative'
       />
-      <div className='w-full text-white m-bg-contrast pt-14 pl-8 pr-8 pb-8 rounded-lg'>
+      <div className='w-full text-gray-400 m-bg-contrast pt-14 pl-8 pr-8 pb-8 rounded-lg'>
+        <h1 className='font-bold text-white mt-2 text-xl jetbrains'>//Intro</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, rerum
-          fuga illum, eius necessitatibus pariatur temporibus minus sint
-          laboriosam itaque ipsam perspiciatis repudiandae quae hic. Blanditiis
-          temporibus amet culpa voluptatem. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Reiciendis, vitae minus porro quos
-          molestias deleniti explicabo officia ipsam. Minus, aperiam cupiditate
-          ea impedit sequi reiciendis voluptate excepturi repudiandae! Unde,
-          beatae!
+          Hey, my name is rupture. I'm moving from my previous position of
+          <span className='orange-color shadow'> Project Manager</span> to
+          pursuing my real passion, being a{' '}
+          <span className='orange-color shadow'>Full Stack Developer</span>. In
+          my years as a Project Manager I've helped ship and maintain multiple
+          SaaS products in different industries like Fintech, Crypto and
+          Marketing. I've learned many things in my line of work and a few
+          things I believe in are:{' '}
+          <span className='orange-color'>
+            Consistency, Efficiency, Reusability, Automation and Performance.
+          </span>
         </p>
-        <p className='mt-2'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, labore
-          ipsam facilis esse nemo tempore placeat doloremque repellat! Aperiam
-          natus vitae qui ut nulla fugiat beatae expedita mollitia, tempore et!
+        <h1 className='font-bold text-white mt-6 text-xl jetbrains'>
+          //Coding
+        </h1>
+        <p>
+          I started coding at the age of 15 with PAWN, a language for scripting
+          in video games, and since then I haven't really stopped coding on my
+          side projects for fun. I've been using Javascript on and off for many
+          years and have taken multiple-courses while also self-learning
+          different technologies. I always enjoy using the latest and greatest,
+          and I never get tired of learning.{' '}
+          <span className='font-bold'>
+            Because of my ability to self-learn I can learn new technologies,
+            trends and best practices very quickly.
+          </span>
         </p>
-        <p className='mt-2'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, labore
-          ipsam facilis esse nemo tempore placeat doloremque repellat! Aperiam
-          natus vitae qui ut nulla fugiat beatae expedita mollitia, tempore et!
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-          molestias explicabo autem sed? Et corrupti dolorum doloribus, saepe
-          esse corporis recusandae atque aut laudantium possimus quo. Aliquam,
-          libero expedita? Dolore?
+
+        <h1 className='font-bold text-white mt-6 text-xl jetbrains'>
+          //Tech_Stack
+        </h1>
+        <h1 className='font-bold text-white jetbrains bg-black w-max pl-1 pr-1'>
+          {' '}
+          $ cat <span className='orange-color'>FRONT_end.txt</span>
+          <span className='cursor-blink'>|</span>
+        </h1>
+        <p>
+          React, React-Hooks, Typescript, Redux, Redux-Sagas, Redux-Toolkit,
         </p>
-        <p
-          className='mt-8 font-bold text-lg cursor-pointer'
+        <p>NextJS, Gatsby, TailwindCSS, TailwindCSS SASS, styled-components,</p>
+        <p>SVGs, ThreeJS, Animations.</p>
+
+        <h1 className='font-bold text-white jetbrains bg-black w-max pl-1 pr-1 mt-4'>
+          {' '}
+          $ cat <span className='orange-color'>BACK_end.txt</span>
+          <span className='cursor-blink'>|</span>
+        </h1>
+        <p>NodeJS, Python, Django, Express, Koa, MongoDB, mongoose,</p>
+        <p>GraphQL, Hasura, Apollo, PostgreSQL, Firebase, JWT</p>
+        <p>API Development, User Auth, etc..</p>
+        <h1 className='font-bold text-white mt-6 text-xl jetbrains'>
+          //Interests
+        </h1>
+        <p>
+          I love <span className='font-bold'>User Design</span>,{' '}
+          <span className='font-bold'>User Interfaces </span>
+          and <span className='font-bold'>User Experience</span>, turning a
+          weakness of most develipers into a passion has been nothing but
+          amazing.
+        </p>
+        <p>
+          I'm very interested building full stack websites to scale to millions
+          of users a month. I also love participating in multiple different
+          projects.
+        </p>
+        <p>
+          In my free time if I'm not learning a new technology or polishing an
+          existing one you'll find me building keyboards, going to the gym and
+          making music.
+        </p>
+        <h1
+          className='mt-8 text-white font-bold text-xl cursor-pointer jetbrains'
           onClick={() => revealInfo()}
         >
-          Contact Me
-        </p>
+          //Contact_Me
+        </h1>
         <p className=' mt-2' onClick={() => revealInfo()}>
           📧Email: <span className='orange-color'>{contactInfo.email}</span>
         </p>

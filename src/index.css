@@ -657,3 +657,29 @@ svg#terminal-react2 {
   overflow: hidden;
   color: #82aaff;
 }
+
+.line-under {
+  background-image: linear-gradient(
+    0deg,
+    rgba(130, 170, 255, 1) 0,
+    rgba(130, 170, 255, 0.4) 30%,
+    transparent 40%,
+    transparent
+  );
+}
+
+.cursor-blink {
+  animation: cursor-blink 0.7s infinite;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
