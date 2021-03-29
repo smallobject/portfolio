@@ -27,7 +27,9 @@ function About() {
         className='h-32 w-32 object-cover rounded-full z-10 m-auto -mb-10 profile-stroke relative'
       />
       <div className='w-full text-gray-400 m-bg-contrast pt-14 pl-8 pr-8 pb-8 rounded-lg'>
-        <h1 className='font-bold text-white mt-2 text-xl jetbrains'>//Intro</h1>
+        <h1 className='font-bold text-white mt-2 text-xl jetbrains'>
+          {'//Intro'}
+        </h1>
         <p>
           Hey, my name is rupture. I'm moving from my previous position of
           <span className='orange-color shadow'> Project Manager</span> to
@@ -42,7 +44,7 @@ function About() {
           </span>
         </p>
         <h1 className='font-bold text-white mt-6 text-xl jetbrains'>
-          //Coding
+          {'//Coding'}
         </h1>
         <p>
           I started coding at the age of 15 with PAWN, a language for scripting
@@ -58,7 +60,7 @@ function About() {
         </p>
 
         <h1 className='font-bold text-white mt-6 text-xl jetbrains'>
-          //Tech_Stack
+          {'//Tech_Stack'}
         </h1>
         <h1 className='font-bold text-white jetbrains bg-black w-max pl-1 pr-1'>
           {' '}
@@ -80,7 +82,7 @@ function About() {
         <p>GraphQL, Hasura, Apollo, PostgreSQL, Firebase, JWT</p>
         <p>API Development, User Auth, etc..</p>
         <h1 className='font-bold text-white mt-6 text-xl jetbrains'>
-          //Interests
+          {'//Interests'}
         </h1>
         <p>
           I love <span className='font-bold'>User Design</span>,{' '}
@@ -103,7 +105,7 @@ function About() {
           className='mt-8 text-white font-bold text-xl cursor-pointer jetbrains'
           onClick={() => revealInfo()}
         >
-          //Contact_Me
+          {'//Contact_Me'}
         </h1>
         <p className=' mt-2' onClick={() => revealInfo()}>
           📧Email: <span className='orange-color'>{contactInfo.email}</span>

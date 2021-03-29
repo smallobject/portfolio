@@ -38,12 +38,12 @@ function App() {
     <div>
       <div className='grid grid-cols-3' ref={homeRef}>
         {/* Where navbar starts */}
-        <div className='flex text-md text-gray-300 text-ms fixed z-10'>
+        <div className='flex text-md text-gray-300 text-ms fixed z-20'>
           <span
             className='m-2 text-white hover:text-indigo-700 cursor-pointer jetbrains bg-black hover:bg-white shadow-md'
             onClick={() => scrollToHome()}
           >
-            > SM.
+            {'> SM.'}
           </span>
           <span
             className='m-2 hover:text-white cursor-pointer'
