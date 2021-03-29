@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ProfilePicture from '../assets/images/head1.png';
-import { ReactComponent as Dots2 } from '../assets/dots2.svg';
 
 function About() {
   const [contactInfo, setContactInfo] = useState({
@@ -24,7 +23,6 @@ function About() {
       <h1 className='text-6xl text-center text-white mb-16 relative add-dots w-max m-auto pb-12'>
         About Me
       </h1>
-      {/* <Dots2 className='absolute' id='about-dots' /> */}
       <img
         src={ProfilePicture}
         alt='head1'
@@ -92,7 +90,7 @@ function About() {
           I love <span className='font-bold'>User Design</span>,{' '}
           <span className='font-bold'>User Interfaces </span>
           and <span className='font-bold'>User Experience</span>, turning a
-          weakness of most develipers into a passion has been nothing but
+          weakness of most developers into a passion has been nothing but
           amazing.
         </p>
         <p>

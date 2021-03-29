@@ -46,19 +46,20 @@ function App() {
             {'> SM.'}
           </span>
           <span
-            className='m-2 hover:text-white cursor-pointer'
+            className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md'
             onClick={() => scrollToProjects()}
           >
             Projects
           </span>
           <span
-            className='m-2 hover:text-white cursor-pointer'
+            className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md'
             onClick={() => scrollToAbout()}
           >
-            About
+            {'About & Contact'}
           </span>
-          <span className='m-2 hover:text-white cursor-pointer'>Resume</span>
-          <span className='m-2 hover:text-white cursor-pointer'>Contact</span>
+          <span className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md'>
+            Resume
+          </span>
         </div>
         {/* Where navbar ends
         Where header starts */}
