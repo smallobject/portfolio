@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { ReactComponent as Dots } from '../../assets/dots.svg';
 
 function Project2() {
   const [sectionVisibility, setSectionVisibility] = useState('div-hidden');
 
   return (
-    <div className='items-center location-2'>
+    <div className='items-center location-2 relative'>
+      <Dots id='dots2proj2' />
       <div
         className='flex flex-col justify-center items-center max-w-lg mx-auto my-8 relative h-96'
         onMouseEnter={() => setSectionVisibility('div-shown2')}

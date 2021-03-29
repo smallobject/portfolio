@@ -1,5 +1,17 @@
 import * as React from 'react';
+import { useState } from 'react';
+
 function SvgComponent(props) {
+  const [isPlaying, setIsPlaying] = useState('running');
+
+  const playingState = () => {
+    if (isPlaying === 'running') {
+      setIsPlaying('paused');
+    } else {
+      setIsPlaying('running');
+    }
+  };
+
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -30,9 +42,26 @@ function SvgComponent(props) {
         height='100%'
         ry={4.583}
       />
-      <circle cx={24} cy={23} r={7} fill='#f92672' />
+      <circle
+        className='cursor-pointer'
+        cx={24}
+        cy={23}
+        r={7}
+        fill='#f92672'
+        onClick={() => playingState()}
+      />
       <circle cx={44} cy={23} r={7} fill='#f4bf75' />
       <circle cx={64} cy={23} r={7} className='prefix__color2' />
+      {isPlaying === 'paused' ? (
+        <text x={80} y={12} fill='#f92672' className='font-bold blinking'>
+          {'Animation Paused'}
+        </text>
+      ) : (
+        <text x={80} y={12} className='font-bold houdini prefix__color2'>
+          {'Animation Playing'}
+        </text>
+      )}
+
       <svg
         width={960}
         height={480}
@@ -998,18 +1027,19 @@ function SvgComponent(props) {
             {'API Development, User Auth, etc..'}
           </text>
           <text
-            textLength={340}
+            textLength={520}
             fontWeight='bold'
             className='prefix__foreground'
             id='prefix__g27'
           >
-            {'to name a few.. PS: This is not an image :)'}
+            {`to name a few.. PS: Click the red 🔴 to pause/play the animate :)`}
           </text>
         </defs>
         <g
           id='g-animation'
           style={{
             animationIterationCount: 'infinite',
+            animationPlayState: isPlaying,
             animationDuration: '10s',
             animationName: 'roll',
             animationTimingFunction: 'steps(1,end)',

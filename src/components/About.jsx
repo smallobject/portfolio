@@ -51,16 +51,27 @@ function About() {
           esse corporis recusandae atque aut laudantium possimus quo. Aliquam,
           libero expedita? Dolore?
         </p>
-        <p className='mt-8 font-bold text-lg' onClick={() => revealInfo()}>
+        <p
+          className='mt-8 font-bold text-lg cursor-pointer'
+          onClick={() => revealInfo()}
+        >
           Contact Me
         </p>
-        <p id='email' className='mt-2' onClick={() => revealInfo()}>
-          📧Email: {contactInfo.email}
+        <p className=' mt-2' onClick={() => revealInfo()}>
+          📧Email: <span className='orange-color'>{contactInfo.email}</span>
         </p>
-        <p onClick={() => revealInfo()}>📞Phone: {contactInfo.phone}</p>
-        <p onClick={() => revealInfo()}>📞Telegram: {contactInfo.telegram}</p>
-        <p onClick={() => revealInfo()}>🌎Location: {contactInfo.location}</p>
-        <p className='mt-2' onClick={() => revealInfo()}>
+        <p onClick={() => revealInfo()}>
+          📞Phone: <span className='orange-color'>{contactInfo.phone}</span>
+        </p>
+        <p onClick={() => revealInfo()}>
+          📞Telegram:{' '}
+          <span className='orange-color'>{contactInfo.telegram}</span>
+        </p>
+        <p onClick={() => revealInfo()}>
+          🌎Location:{' '}
+          <span className='orange-color'>{contactInfo.location}</span>
+        </p>
+        <p className='mt-2 cursor-pointer' onClick={() => revealInfo()}>
           Please click to show the details, hidden due to bots :)
         </p>
       </div>

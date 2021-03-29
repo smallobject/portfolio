@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
+import { ReactComponent as Dots } from '../../assets/dots.svg';
+import { ReactComponent as Blob4 } from '../../assets/blob4.svg';
+import { ReactComponent as Blob2 } from '../../assets/blob2.svg';
+import { ReactComponent as Blob1 } from '../../assets/blob1.svg';
 
 function Project1() {
   const [sectionVisibility, setSectionVisibility] = useState('div-hidden');
 
   return (
-    <div className='items-center location-2 mb-8'>
+    <div className='items-center location-2 mb-8 relative'>
+      <Dots id='dots2' className='animated2' />
+      <Blob4 id='blobl4proj1' />
+      <Blob2 id='blobl2proj1' />
+      <Blob1 id='blobl1proj1' />
       <h3 className='text-6xl text-white text-center p-8'>Projects</h3>
       <div
         className='flex flex-col justify-center items-center max-w-lg mx-auto my-8 relative h-96'

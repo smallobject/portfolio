@@ -40,7 +40,7 @@ function App() {
         {/* Where navbar starts */}
         <div className='flex text-md text-gray-300 text-ms fixed z-10'>
           <span
-            className='m-2 text-white hover:text-indigo-400 cursor-pointer float-right jetbrains'
+            className='m-2 text-white hover:text-indigo-700 cursor-pointer jetbrains bg-black hover:bg-white shadow-md'
             onClick={() => scrollToHome()}
           >
             > SM.
@@ -52,7 +52,7 @@ function App() {
             Projects
           </span>
           <span
-            className='m-2 hover:text-white cursor-pointer float-right'
+            className='m-2 hover:text-white cursor-pointer'
             onClick={() => scrollToAbout()}
           >
             About
@@ -65,7 +65,7 @@ function App() {
         <Header className='header' />
       </div>
       <div className='terminal-grid'>
-        <Terminal className='pulse m-auto terminal-grid-location terminal-size' />
+        <Terminal className='pulse m-auto terminal-grid-location terminal-size z-10' />
       </div>
       <Blob1 id='blob1' className='animated' />
       <Blob2 id='blob2' />
