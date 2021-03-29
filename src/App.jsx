@@ -17,27 +17,37 @@ import Terminal from './components/Terminal';
 // import NavBar from './components/NavBar';
 
 import PoETrade from './components/projects/Project1';
-import ClothingStore from './components/projects/Project2';
+import PoEUtil from './components/projects/Project2';
+import ClothingStore from './components/projects/Project3';
+import Portfolio from './components/projects/Project4';
 import './App.css';
 
 function App() {
   const projectRef = useRef(null);
+  const homeRef = useRef(null);
 
   const scrollToProjects = () => projectRef.current.scrollIntoView();
+  const scrollToHome = () => homeRef.current.scrollIntoView();
 
   return (
     <div>
-      <div className='grid grid-cols-3'>
+      <div className='grid grid-cols-3' ref={homeRef}>
         {/* Where navbar starts */}
-        <div className='flex text-gray-300 text-ms fixed z-10'>
-          <span className='m-2 hover:text-white cursor-pointer float-right'>
-            About
+        <div className='flex text-md text-gray-300 text-ms fixed z-10'>
+          <span
+            className='m-2 text-white hover:text-indigo-400 cursor-pointer float-right jetbrains'
+            onClick={() => scrollToHome()}
+          >
+            > SM.
           </span>
           <span
             className='m-2 hover:text-white cursor-pointer'
             onClick={() => scrollToProjects()}
           >
             Projects
+          </span>
+          <span className='m-2 hover:text-white cursor-pointer float-right'>
+            About
           </span>
           <span className='m-2 hover:text-white cursor-pointer'>Resume</span>
           <span className='m-2 hover:text-white cursor-pointer'>Contact</span>
@@ -64,6 +74,8 @@ function App() {
       <Dots id='dots' className='animated2' />
       <div ref={projectRef} className='grid grid-cols-3 grid-rows-3 mt-4'>
         <PoETrade />
+        <Portfolio />
+        <PoEUtil />
         <ClothingStore />
       </div>
     </div>

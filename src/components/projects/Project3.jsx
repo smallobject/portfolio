@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 
-function Project2() {
+function Project3() {
   const [sectionVisibility, setSectionVisibility] = useState('div-hidden');
 
   return (
-    <div className='items-center location-2'>
+    <div className='items-center location-2 -mt-12'>
       <div
         className='flex flex-col justify-center items-center max-w-lg mx-auto my-8 relative h-96'
-        onMouseEnter={() => setSectionVisibility('div-shown2')}
+        onMouseEnter={() => setSectionVisibility('div-shown3')}
         onMouseLeave={() => setSectionVisibility('div-hidden')}
       >
         <div className='w-full h-full rotating-bg absolute rounded-md rotate-left' />
         <div className='w-full h-full rotating-bg2 absolute rounded-md rotate-right' />
-        <div className='m-bg-contrast h-full w-full rounded-lg shadow-lg bg-cover bg-center bg-gradient2' />
+        <div className='m-bg-contrast h-full w-full rounded-lg shadow-lg bg-cover bg-center bg-gradient3' />
         <div
           className={`absolute bg-cover shadow-lg w-full h-full rounded-md text-white description ${sectionVisibility}`}
         >
@@ -20,21 +20,18 @@ function Project2() {
           <div className='w-full h-full rotating-bg3 absolute transform rotate-6 rounded-md rotate-right' />
           <p className='m-4'>
             <p className='text-3xl m-blue text-center mb-2'>
-              PoE-Util NPM Package
+              React Ecommerce Site
             </p>
-            PoE-Util is a utility that wraps around the official Path of Exile
-            API. It can search items, stashes, guilds, players, ladders, etc all
-            within the game. With{' '}
-            <span className='orange-color font-bold'>NodeJS</span> and{' '}
-            <span className='orange-color font-bold'>Axios</span> we're hitting
-            different PoE endpoints requesting and validating the data before
-            sending it back. There's{' '}
-            <span className='orange-color font-bold'>JEST</span> testing for
-            each function within the app. Currently it's getting 150 downloads
-            per week from real active users.
+            This ecommerce website was built using React and Firebase as a
+            database. It offers a fully functional payment system with Stripe,
+            local storage of selected cart items, fully working login using
+            Google or your own email. The site has two version, one with a
+            working GraphQL as backend and one as direct Firebase using
+            NodeJS+Express as a middleman. Full disclosure this project was part
+            of a course I was following.
           </p>
           <a
-            href='https://github.com/smallobject/poe-trading-site'
+            href='https://github.com/smallobject/clothing-store'
             className='m-auto flex button-width bg-gray-800 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'
           >
             Github Link
@@ -43,18 +40,18 @@ function Project2() {
             href='https://www.npmjs.com/package/poe-util'
             className='m-auto flex button-width bg-gray-800 mt-4 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'
           >
-            NPM Link
+            Live Link
           </a>
         </div>
         <div className='w-56 md:w-64 m-bg-contrast -mt-10 shadow-lg rounded-lg overflow-hidden'>
           <div className='py-2 text-center font-bold uppercase tracking-wide text-white'>
-            PoE-Util NPM Package
+            React ecommerce Site
           </div>
           <div className='flex items-center justify-between py-2 px-3 m-bg-contrast'>
+            <small className='m-cyan'>React</small>
             <small className='m-cyan'>NodeJS</small>
-            <small className='m-cyan'>Axios</small>
-            <small className='m-cyan'>JEST</small>
-            <small className='m-cyan'>API</small>
+            <small className='m-cyan'>GraphQL</small>
+            <small className='m-cyan'>Firebase</small>
           </div>
         </div>
       </div>
@@ -62,4 +59,4 @@ function Project2() {
   );
 }
 
-export default Project2;
+export default Project3;

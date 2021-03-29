@@ -4,7 +4,7 @@ function Project1() {
   const [sectionVisibility, setSectionVisibility] = useState('div-hidden');
 
   return (
-    <div className='items-center location-2'>
+    <div className='items-center location-2 mb-8'>
       <h3 className='text-6xl text-white text-center p-8'>Projects</h3>
       <div
         className='flex flex-col justify-center items-center max-w-lg mx-auto my-8 relative h-96'
