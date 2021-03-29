@@ -54,6 +54,7 @@ function SvgComponent(props) {
       <circle cx={64} cy={23} r={7} className='prefix__color2' />
       {isPlaying === 'paused' ? (
         <text
+          fontWeight='bold'
           x={80}
           y={15}
           fill='#f92672'
@@ -64,6 +65,7 @@ function SvgComponent(props) {
         </text>
       ) : (
         <text
+          fontWeight='bold'
           x={80}
           y={15}
           fontSize='14'
@@ -1043,7 +1045,7 @@ function SvgComponent(props) {
             className='prefix__foreground'
             id='prefix__g27'
           >
-            {`to name a few.. PS: Click the red 🔴 to pause/play the animate :)`}
+            {`to name a few.. PS: Click the red 🔴 to pause/play the animation :)`}
           </text>
         </defs>
         <g
