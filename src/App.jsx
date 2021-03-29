@@ -82,9 +82,9 @@ function App() {
       <Dots id='dots' className='animated2' />
       <div ref={projectRef} className='grid grid-cols-3 grid-rows-3 mt-4'>
         <PoETrade />
+        <ClothingStore />
         <Portfolio />
         <PoEUtil />
-        <ClothingStore />
       </div>
       <div ref={aboutRef} className='terminal-grid mt-32'>
         <About />

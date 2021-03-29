@@ -19,7 +19,7 @@ function About() {
   };
 
   return (
-    <div className='w-full h-96 terminal-grid-location'>
+    <div className='w-full h-96 terminal-grid-location relative'>
       <h1 className='text-6xl text-center text-white mb-16'>About Me</h1>
       <img
         src={ProfilePicture}

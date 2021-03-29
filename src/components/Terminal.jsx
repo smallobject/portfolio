@@ -59,7 +59,6 @@ function SvgComponent(props) {
       ) : (
         ''
       )}
-
       <svg
         width={960}
         height={480}

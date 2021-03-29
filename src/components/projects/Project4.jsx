@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
+import { ReactComponent as Blob3 } from '../../assets/blob1.svg';
+import { ReactComponent as Lines } from '../../assets/lines.svg';
 
 function Project4() {
   const [sectionVisibility, setSectionVisibility] = useState('div-hidden');
 
   return (
-    <div className='items-center location-2 mt-16'>
+    <div className='items-center location-2 -mt-8 relative'>
+      <Blob3 id='blob3proj4' />
+      <Lines id='linesproj4' />
       <div
         className='flex flex-col justify-center items-center max-w-lg mx-auto my-8 relative h-96'
         onMouseEnter={() => setSectionVisibility('div-shown4')}

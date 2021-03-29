@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { ReactComponent as Dots } from '../../assets/dots.svg';
+import { ReactComponent as Blob3 } from '../../assets/blob3.svg';
+import { ReactComponent as Blob6 } from '../../assets/blob6.svg';
 
 function Project2() {
   const [sectionVisibility, setSectionVisibility] = useState('div-hidden');
 
   return (
-    <div className='items-center location-2 relative'>
+    <div className='items-center location-2 relative -mt-20'>
       <Dots id='dots2proj2' />
+      <Blob3 id='blob3proj2' />
+      <Blob6 id='blob6proj2' className='animated' />
       <div
         className='flex flex-col justify-center items-center max-w-lg mx-auto my-8 relative h-96'
         onMouseEnter={() => setSectionVisibility('div-shown2')}

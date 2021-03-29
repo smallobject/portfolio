@@ -4,7 +4,7 @@ function Project3() {
   const [sectionVisibility, setSectionVisibility] = useState('div-hidden');
 
   return (
-    <div className='items-center location-2 -mt-20'>
+    <div className='items-center location-2 mt-8'>
       <div
         className='flex flex-col justify-center items-center max-w-lg mx-auto my-8 relative h-96'
         onMouseEnter={() => setSectionVisibility('div-shown3')}
