@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProfilePicture from '../assets/images/head1.png';
+import { ReactComponent as Dots2 } from '../assets/dots2.svg';
 
 function About() {
   const [contactInfo, setContactInfo] = useState({
@@ -20,7 +21,10 @@ function About() {
 
   return (
     <div className='w-full h-96 terminal-grid-location relative'>
-      <h1 className='text-6xl text-center text-white mb-16'>About Me</h1>
+      <h1 className='text-6xl text-center text-white mb-16 relative add-dots w-max m-auto pb-12'>
+        About Me
+      </h1>
+      {/* <Dots2 className='absolute' id='about-dots' /> */}
       <img
         src={ProfilePicture}
         alt='head1'

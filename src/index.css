@@ -684,3 +684,10 @@ svg#terminal-react2 {
     transparent
   );
 }
+
+.add-dots {
+  position: relative;
+  background-image: url(./assets/dots2.svg);
+  background-repeat: no-repeat;
+  background-position: left 1% bottom 13%;
+}
