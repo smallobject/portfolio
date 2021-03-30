@@ -135,7 +135,7 @@ function About() {
         </p>
       </div>
 
-      <div className='text-center text-white font-bold p-8'>
+      <div className='text-center text-white font-bold p-8 dark:text-black'>
         Made with lots of ❤️ and ☕. :)
       </div>
     </div>
