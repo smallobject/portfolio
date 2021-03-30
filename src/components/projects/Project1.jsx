@@ -13,7 +13,9 @@ function Project1() {
       <Blob4 id='blobl4proj1' />
       <Blob2 id='blobl2proj1' />
       <Blob1 id='blobl1proj1' />
-      <h3 className='text-6xl text-white text-center p-8'>Projects</h3>
+      <h3 className='text-6xl text-white text-center p-8 dark:text-black'>
+        Projects
+      </h3>
       <div
         className='flex flex-col justify-center items-center max-w-lg mx-auto my-8 relative h-96'
         onMouseEnter={() => setSectionVisibility('div-shown')}
@@ -43,7 +45,7 @@ function Project1() {
             an <span className='orange-color font-bold'>MVP</span> quite quick
             and comfortable, while also allowing the possibility to scale later
             on. The project has many features which are listed in the github
-            page.
+            page. Like auto-complete, local search storage, dark mode, etc.
           </div>
           <a
             href='https://github.com/smallobject/poe-trading-site'

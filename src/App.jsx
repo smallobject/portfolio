@@ -23,6 +23,10 @@ import PoETrade from './components/projects/Project1';
 import PoEUtil from './components/projects/Project2';
 import ClothingStore from './components/projects/Project3';
 import Portfolio from './components/projects/Project4';
+
+//UI
+import ThemeToggle from './components/ui/ThemeSelect';
+
 import './App.css';
 
 function App() {
@@ -40,26 +44,27 @@ function App() {
         {/* Where navbar starts */}
         <div className='flex text-md text-gray-300 text-ms fixed z-20'>
           <span
-            className='m-2 text-white hover:text-indigo-700 cursor-pointer jetbrains bg-black hover:bg-white shadow-md'
+            className='m-2 text-white hover:text-indigo-700 cursor-pointer jetbrains bg-black hover:bg-white shadow-md dark:bg-white dark:text-black dark:hover:text-indigo-700'
             onClick={() => scrollToHome()}
           >
             {'> SM.'}
           </span>
           <span
-            className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md'
+            className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md dark:bg-white dark:text-black dark:hover:text-indigo-700'
             onClick={() => scrollToProjects()}
           >
             Projects
           </span>
           <span
-            className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md'
+            className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md dark:bg-white dark:text-black dark:hover:text-indigo-700'
             onClick={() => scrollToAbout()}
           >
             {'About & Contact'}
           </span>
-          <span className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md'>
+          <span className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md dark:bg-white dark:text-black dark:hover:text-indigo-700'>
             Resume
           </span>
+          <ThemeToggle />
         </div>
         {/* Where navbar ends
         Where header starts */}

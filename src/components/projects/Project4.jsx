@@ -31,21 +31,23 @@ function Project4() {
             <span className='orange-color font-bold'>React</span> instead of
             vanilla javascript to take advantage of the{' '}
             <span className='orange-color font-bold'>Python</span> package I
-            used to create the terminal(Tutorial in Github).{' '}
+            used to create the terminal.{' '}
             <span className='orange-color font-bold'>TailwindCSS</span> is used
-            for the styling although a lot of the site uses custom CSS for most
-            things. I created the initial design in{' '}
+            for the styling although a lot of the site uses custom CSS. I
+            created the initial design in{' '}
             <span className='orange-color font-bold'>Figma</span> and then moved
-            on to creating the actual website.
+            on to creating the actual website. Dark Mode was only added as a
+            proof of concept, there's no actual design of a light version of the
+            website.
           </div>
           <a
-            href='https://github.com/smallobject/clothing-store'
+            href='https://github.com/smallobject/portfolio'
             className='m-auto flex button-width bg-gray-800 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'
           >
             Github Link
           </a>
           <a
-            href='https://www.npmjs.com/package/poe-util'
+            href='https://www.smallobject.dev/'
             className='m-auto flex button-width bg-gray-800 mt-4 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'
           >
             Live Link

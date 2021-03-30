@@ -22,25 +22,27 @@ function Project3() {
             <p className='text-3xl m-blue text-center mb-2'>
               React Ecommerce Site
             </p>
-            This ecommerce website was built using React and Firebase as a
-            database. It offers a fully functional payment system with Stripe,
-            local storage of selected cart items, fully working login using
-            Google or your own email. The site has two version, one with a
-            working GraphQL as backend and one as direct Firebase using
-            NodeJS+Express as a middleman. Full disclosure this project was part
-            of a course I was following.
+            This ecommerce website was built using{' '}
+            <span className='orange-color font-bold'>React</span> and{' '}
+            <span className='orange-color font-bold'>Firebase</span> as a
+            database. It offers a fully functional payment system with{' '}
+            <span className='orange-color font-bold'>Stripe</span>, local
+            storage of selected cart items, fully working login using Google or
+            your own email. The site has two version, one with a working{' '}
+            <span className='orange-color font-bold'>GraphQL</span> as backend
+            and one as direct{' '}
+            <span className='orange-color font-bold'>Firebase</span> and{' '}
+            <span className='orange-color font-bold'>NodeJS+Express </span>a
+            backend.{' '}
+            <span className='orange-color font-bold'>styled-components</span>{' '}
+            was also used for some UI elements along side{' '}
+            <span className='orange-color font-bold'>Sass</span>.
           </div>
           <a
             href='https://github.com/smallobject/clothing-store'
             className='m-auto flex button-width bg-gray-800 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'
           >
             Github Link
-          </a>
-          <a
-            href='https://www.npmjs.com/package/poe-util'
-            className='m-auto flex button-width bg-gray-800 mt-4 text-xs text-white p-2 font-semibold rounded uppercase hover:bg-gray-700'
-          >
-            Live Link
           </a>
         </div>
         <div className='w-56 md:w-64 m-bg-contrast -mt-10 shadow-lg rounded-lg overflow-hidden'>

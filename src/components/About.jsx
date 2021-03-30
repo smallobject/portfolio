@@ -24,7 +24,7 @@ function About() {
 
   return (
     <div className='w-full h-96 terminal-grid-location relative'>
-      <h1 className='text-6xl text-center text-white mb-16 relative add-dots w-max m-auto pb-12'>
+      <h1 className='text-6xl text-center text-white mb-16 relative add-dots w-max m-auto pb-12 dark:text-black'>
         About Me
       </h1>
       <img
@@ -39,7 +39,7 @@ function About() {
         <p>
           Hey, my name is Tiesti. I'm moving from my previous position of
           <span className='orange-color shadow'> Project Manager</span> in
-          pursue of my real passion, being a{' '}
+          pursuit of my real passion, being a{' '}
           <span className='orange-color shadow'>Full Stack Developer</span>. In
           my years as a Project Manager I've helped ship and maintain multiple
           SaaS products in different industries like Fintech, Crypto and
