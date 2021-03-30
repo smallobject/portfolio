@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import ProfilePicture from '../assets/images/head1.png';
+import { ReactComponent as Email } from '../assets/icons/email.svg';
+import { ReactComponent as Phone } from '../assets/icons/phone.svg';
+import { ReactComponent as Telegram } from '../assets/icons/telegram.svg';
+import { ReactComponent as World } from '../assets/icons/world.svg';
 
 function About() {
   const [contactInfo, setContactInfo] = useState({
@@ -111,18 +115,20 @@ function About() {
           {'//Contact_Me'}
         </h1>
         <p className=' mt-2' onClick={() => revealInfo()}>
-          📧Email: <span className='orange-color'>{contactInfo.email}</span>
+          <Email className='h-4 w-4 float-left mt-1 mr-1' fill='#fff' />
+          Email: <span className='orange-color'>{contactInfo.email}</span>
         </p>
         <p onClick={() => revealInfo()}>
-          📞Phone: <span className='orange-color'>{contactInfo.phone}</span>
+          <Phone className='h-4 w-4 float-left mt-1 mr-1' fill='#fff' />
+          Phone: <span className='orange-color'>{contactInfo.phone}</span>
         </p>
         <p onClick={() => revealInfo()}>
-          🧰Telegram:{' '}
-          <span className='orange-color'>{contactInfo.telegram}</span>
+          <Telegram className='h-4 w-4 float-left mt-1 mr-1' fill='#fff' />
+          Telegram: <span className='orange-color'>{contactInfo.telegram}</span>
         </p>
         <p onClick={() => revealInfo()}>
-          🌎Location:{' '}
-          <span className='orange-color'>{contactInfo.location}</span>
+          <World className='h-4 w-4 float-left mt-1 mr-1' fill='#fff' />
+          Location: <span className='orange-color'>{contactInfo.location}</span>
         </p>
         <p className='mt-2 cursor-pointer' onClick={() => revealInfo()}>
           Please click to show the details, hidden due to bots :)
