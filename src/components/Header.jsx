@@ -33,7 +33,7 @@ const Header = () => {
         </div>
         <div className='w-72 items-center m-auto'>
           <span className='text-white shadow-text'>
-            I'm rupture aka "small object". I am a
+            I'm Tiesti aka "small object". I am a
             <span className='orange-color shadow-text'> Project Manager </span>
             turned into a
             <span className='orange-color shadow-text'>

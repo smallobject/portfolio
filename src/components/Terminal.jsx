@@ -1016,12 +1016,12 @@ function SvgComponent(props) {
             {'GraphQL, Hasura, Apollo, PostgreSQL,'}
           </text>
           <text
-            textLength={264}
+            textLength={240}
             fontWeight='bold'
             className='prefix__color10'
             id='prefix__g26'
           >
-            {'API Development, User Auth, etc..'}
+            {'Python, Django, API, Auth, etc'}
           </text>
           <text
             textLength={520}

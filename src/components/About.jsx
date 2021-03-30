@@ -12,9 +12,9 @@ function About() {
   const revealInfo = () => {
     setContactInfo({
       email: 'smallobject.dev@gmail.com',
-      phone: 'test',
-      telegram: 'test',
-      location: 'test, test, world',
+      phone: '+380639889961',
+      telegram: '+380639889961',
+      location: 'Kyiv, Ukraine',
     });
   };
 
@@ -33,9 +33,9 @@ function About() {
           {'//Intro'}
         </h1>
         <p>
-          Hey, my name is rupture. I'm moving from my previous position of
-          <span className='orange-color shadow'> Project Manager</span> to
-          pursuing my real passion, being a{' '}
+          Hey, my name is Tiesti. I'm moving from my previous position of
+          <span className='orange-color shadow'> Project Manager</span> in
+          pursue of my real passion, being a{' '}
           <span className='orange-color shadow'>Full Stack Developer</span>. In
           my years as a Project Manager I've helped ship and maintain multiple
           SaaS products in different industries like Fintech, Crypto and
@@ -52,12 +52,12 @@ function About() {
           I started coding at the age of 15 with PAWN, a language for scripting
           in video games, and since then I haven't really stopped coding on my
           side projects for fun. I've been using Javascript on and off for many
-          years and have taken multiple-courses while also self-learning
-          different technologies. I always enjoy using the latest and greatest,
-          and I never get tired of learning.{' '}
+          years and have taken multiple courses while also being an autodidact
+          with different technologies. I always enjoy using the latest and
+          greatest, and I never get tired of learning.{' '}
           <span className='font-bold'>
-            Because of my ability to self-learn I can learn new technologies,
-            trends and best practices very quickly.
+            Because of my ability to self-learn and autodidact I can learn new
+            technologies, trends and best practices very quickly.
           </span>
         </p>
 
@@ -82,7 +82,7 @@ function About() {
         </h1>
         <p>NodeJS, Python, Django, Express, Koa, MongoDB, mongoose,</p>
         <p>GraphQL, Hasura, Apollo, PostgreSQL, Firebase, JWT</p>
-        <p>API Development, User Auth, etc..</p>
+        <p>API Development, User Auth, etc.</p>
         <h1 className='font-bold text-white mt-6 text-xl jetbrains'>
           {'//Interests'}
         </h1>
@@ -91,7 +91,8 @@ function About() {
           <span className='font-bold'>User Interfaces </span>
           and <span className='font-bold'>User Experience</span>, turning a
           weakness of most developers into a passion has been nothing but
-          amazing.
+          amazing. It has allowed me to create, deliver and properly communicate
+          a products user experience much more fluently.
         </p>
         <p>
           I'm very interested building full stack websites to scale to millions
@@ -116,7 +117,7 @@ function About() {
           📞Phone: <span className='orange-color'>{contactInfo.phone}</span>
         </p>
         <p onClick={() => revealInfo()}>
-          📞Telegram:{' '}
+          🧰Telegram:{' '}
           <span className='orange-color'>{contactInfo.telegram}</span>
         </p>
         <p onClick={() => revealInfo()}>

@@ -474,7 +474,7 @@ svg#terminal-react2 {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.5)
     ),
-    url('https://raw.githubusercontent.com/smallobject/poe-trading-site/main/images/demo.gif');
+    url('./assets/images/poetrade.gif');
 }
 
 .bg-gradient2 {
@@ -483,7 +483,7 @@ svg#terminal-react2 {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.5)
     ),
-    url('https://i.imgur.com/laS1lxJ.png');
+    url('./assets/images/poeutil.png');
 }
 
 .bg-gradient3 {
@@ -492,7 +492,7 @@ svg#terminal-react2 {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.5)
     ),
-    url('https://i.imgur.com/6evCxEd.png');
+    url('./assets/images/ecommerce.png');
 }
 
 .bg-gradient4 {
@@ -501,7 +501,7 @@ svg#terminal-react2 {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.5)
     ),
-    url('https://i.imgur.com/kC6A013.png');
+    url('./assets/images/portfolio.png');
 }
 
 .div-hidden {
@@ -514,7 +514,7 @@ svg#terminal-react2 {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 1)
     ),
-    url('https://raw.githubusercontent.com/smallobject/poe-trading-site/main/images/demo.gif');
+    url('./assets/images/poetrade.gif');
   visibility: visible;
 }
 
@@ -524,7 +524,7 @@ svg#terminal-react2 {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 1)
     ),
-    url('https://i.imgur.com/laS1lxJ.png');
+    url('./assets/images/poeutil.png');
   visibility: visible;
 }
 
@@ -534,7 +534,7 @@ svg#terminal-react2 {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 1)
     ),
-    url('https://i.imgur.com/6evCxEd.png');
+    url('./assets/images/ecommerce.png');
   visibility: visible;
 }
 
@@ -544,7 +544,7 @@ svg#terminal-react2 {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 1)
     ),
-    url('https://i.imgur.com/kC6A013.png');
+    url('./assets/images/portfolio.png');
   visibility: visible;
 }
 

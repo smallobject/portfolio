@@ -18,7 +18,7 @@ function Project2() {
       >
         <div className='w-full h-full rotating-bg absolute rounded-md rotate-left' />
         <div className='w-full h-full rotating-bg2 absolute rounded-md rotate-right' />
-        <div className='m-bg-contrast h-full w-full rounded-lg shadow-lg bg-cover bg-center bg-gradient2' />
+        <div className='m-bg-contrast h-full w-full rounded-lg shadow-lg bg-cover bg-gradient2' />
         <div
           className={`absolute bg-cover shadow-lg w-full h-full rounded-md text-white description ${sectionVisibility}`}
         >
