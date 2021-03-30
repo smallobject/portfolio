@@ -17,7 +17,7 @@ import Terminal from './components/Terminal';
 // import NavBar from './components/NavBar';
 
 import About from './components/About';
-
+import Pdf from './assets/CV.pdf';
 // Projects
 import PoETrade from './components/projects/Project1';
 import PoEUtil from './components/projects/Project2';
@@ -61,9 +61,14 @@ function App() {
           >
             {'About & Contact'}
           </span>
-          <span className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md dark:bg-white dark:text-black dark:hover:text-indigo-700'>
+          <a
+            rel='noreferrer'
+            target='_blank'
+            href={Pdf}
+            className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md dark:bg-white dark:text-black dark:hover:text-indigo-700'
+          >
             Resume
-          </span>
+          </a>
           <ThemeToggle />
         </div>
         {/* Where navbar ends

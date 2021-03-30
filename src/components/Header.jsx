@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Pdf from '../assets/CV.pdf';
 const Header = () => {
   return (
     <div className='flex order-3 flex-wrap justify-items-center justify-around mt-16 mb-8 location-2'>
@@ -26,9 +26,14 @@ const Header = () => {
           </span>
         </div>
         <div className='items-center text-center mt-6'>
-          <button className='rounded button-download shadow-md text-white'>
+          <a
+            className='rounded button-download shadow-md text-white'
+            href={Pdf}
+            rel='noreferrer'
+            target='_blank'
+          >
             Download Resume
-          </button>
+          </a>
         </div>
       </div>
     </div>
