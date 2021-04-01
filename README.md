@@ -34,5 +34,7 @@ All the animations on the website are done using CSS or native SVG(like the term
 # Planned Things
 
 1. Make a fully functioning terminal
-2. Remake the Projects section
-3. Make the site mobile friendly
+2. Switch the project to use NextJS and focus on SSR
+3. Switch out the multiple grid sections in favor of flexbox
+4. Remake the Projects section
+5. Make the site mobile friendly
