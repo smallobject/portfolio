@@ -30,7 +30,7 @@ const Uses = ({ showUses, setModalView }) => {
         <div className='overlay-container'>
           <div className='uses-container' ref={containerRef}>
             <span
-              className='cursor-pointer font-bold float-right m-2 text-xs text-red-500'
+              className='cursor-pointer font-bold float-right m-2 text-xs text-red-500 stroke-1 border pl-2 pr-2 pt-1 pb-1  border-red-500 rounded-md'
               onClick={() => setModalView()}
             >
               X
@@ -186,26 +186,26 @@ const Uses = ({ showUses, setModalView }) => {
                   >
                     Visual Studio Code
                   </a>
-                  <li className='ml-6'>
-                    <a
-                      rel='noreferrer'
-                      target='_blank'
-                      className='m-blue'
-                      href='https://draculatheme.com/pro'
-                    >
-                      Dracula Pro Theme
-                    </a>
-                  </li>
-                  <li className='ml-6'>
-                    <a
-                      rel='noreferrer'
-                      target='_blank'
-                      className='m-blue'
-                      href='https://www.jetbrains.com/lp/mono/'
-                    >
-                      JetBrains Mono Font
-                    </a>
-                  </li>
+                </li>
+                <li className='ml-6'>
+                  <a
+                    rel='noreferrer'
+                    target='_blank'
+                    className='m-blue'
+                    href='https://draculatheme.com/pro'
+                  >
+                    Dracula Pro Theme
+                  </a>
+                </li>
+                <li className='ml-6'>
+                  <a
+                    rel='noreferrer'
+                    target='_blank'
+                    className='m-blue'
+                    href='https://www.jetbrains.com/lp/mono/'
+                  >
+                    JetBrains Mono Font
+                  </a>
                 </li>
                 <li className=''>
                   <a
