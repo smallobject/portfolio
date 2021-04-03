@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Header from './components/Header';
 import { ReactComponent as Blob1 } from './assets/blob1.svg';
 import { ReactComponent as Blob2 } from './assets/blob2.svg';
@@ -18,6 +18,7 @@ import Terminal from './components/Terminal';
 
 import About from './components/About';
 import Pdf from './assets/CV.pdf';
+import Uses from './components/Uses';
 // Projects
 import PoETrade from './components/projects/Project1';
 import PoEUtil from './components/projects/Project2';
@@ -30,6 +31,8 @@ import ThemeToggle from './components/ui/ThemeSelect';
 import './App.css';
 
 function App() {
+  const [showUses, setShowUses] = useState(false);
+
   const projectRef = useRef(null);
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
@@ -37,6 +40,10 @@ function App() {
   const scrollToProjects = () => projectRef.current.scrollIntoView();
   const scrollToHome = () => homeRef.current.scrollIntoView();
   const scrollToAbout = () => aboutRef.current.scrollIntoView();
+
+  const setModalView = () => {
+    setShowUses(!showUses);
+  };
 
   return (
     <div>
@@ -69,11 +76,18 @@ function App() {
           >
             Resume
           </a>
+          <span
+            className='m-2 hover:text-white cursor-pointer m-bg-contrast pl-2 pr-2 rounded-md dark:bg-white dark:text-black dark:hover:text-indigo-700'
+            onClick={() => setModalView()}
+          >
+            {'Uses'}
+          </span>
           <ThemeToggle />
         </div>
         {/* Where navbar ends
         Where header starts */}
         <Header className='header' />
+        <Uses showUses={showUses} setModalView={setModalView} />
       </div>
       <div className='terminal-grid'>
         <Terminal className='pulse m-auto terminal-grid-location terminal-size z-10' />
