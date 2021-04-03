@@ -10,7 +10,7 @@
 
 .overlay-container {
   transform-origin: center;
-  animation: boing 0.5s linear;
+  animation: boing 0.5s ease-in-out;
   z-index: 22;
   position: fixed;
   top: 0;
@@ -20,9 +20,9 @@
 }
 
 .uses-container {
+  display: block;
   background-color: #090b10;
   width: 50%;
-  height: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,9 +44,14 @@
     transform: scale(0);
   }
   80% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
   }
+}
+
+.office-img {
+  height: 550px;
+  width: 350px;
 }
